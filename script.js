@@ -37,8 +37,7 @@ document.getElementsByTagName("header")[0].addEventListener("dblclick", function
 })
 
 let cards = document.getElementsByClassName("card")
-let loop = 0
-while(loop < cards.length){
+for(let loop = 0;loop < cards.length; loop++){
     let card = cards[loop]
     let cardBtnView = cards[loop].getElementsByClassName("btn-success")[0]
 
@@ -52,7 +51,6 @@ while(loop < cards.length){
         }
     })
 
-    loop++
 }
 
 let forwardBtn = document.querySelector("div.container p .btn-secondary")
